@@ -31,7 +31,7 @@ function buildCard(trainers) {
         const ul = document.createElement("ul")
         const pokemons = trainer.pokemons
         for (const pokemon of pokemons) {
-            addSinglePokemon(pokemon)
+            addSinglePokemon(pokemon, ul)
         }
 
         div.appendChild(p)
@@ -41,7 +41,7 @@ function buildCard(trainers) {
     }
 }
 
-function addSinglePokemon(pokemon) {
+function addSinglePokemon(pokemon, ul) {
     let li = document.createElement("li")
     let button2 = document.createElement("button")
     button2.className = "release"
